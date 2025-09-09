@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Office Downloads - WinOfficeISO</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-blue-600">WinOfficeISO</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="/" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="/windows.html" class="text-gray-700 hover:text-blue-600">Windows</a>
+        <a href="/office.html" class="text-gray-700 hover:text-blue-600 font-semibold">Office</a>
+        <a href="/about.html" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="/contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-10">Microsoft Office Download</h2>
+
+    <!-- Retail & Volume -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-4">Retail Editions</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li>Office Home</li>
+          <li>Home and Business</li>
+          <li>Professional Plus</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-4">Volume Editions</h3>
+        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+          <li>Standard</li>
+          <li>Professional Plus</li>
+          <li>Enterprise (where available)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Office Versions -->
+    <section class="space-y-16">
+      <!-- Versions List -->
+      <script>
+        const officeVersions = [2024, 2021, 2019, 2016, 2013, 2010];
+      </script>
+
+      <!-- Office Template Section (repeated) -->
+      <div id="office-sections">
+        <!-- Repeated sections generated below -->
+      </div>
+
+      <script>
+        const langOptions = ['English', 'Spanish', 'German', 'French', 'Italian', 'Portuguese'];
+        const editions = ['Home', 'Standard', 'Home & Student', 'Home & Business'];
+        const osList = ['Windows', 'Mac'];
+
+        let container = document.getElementById('office-sections');
+
+        officeVersions.forEach(ver => {
+          let section = document.createElement('section');
+          section.className = 'mb-10';
+
+          let langSelect = '';
+          if (ver !== 2024) {
+            langSelect = `
+              <label class="block mb-2 font-medium text-gray-700">Select Language</label>
+              <select class="mb-4 w-full p-2 border rounded">
+                ${langOptions.map(l => `<option>${l}</option>`).join('')}
+              </select>
+            `;
+          }
+
+          let content = `
+            <h3 class="text-2xl font-semibold mb-4">Office ${ver}</h3>
+            ${langSelect}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${osList.map(os => `
+                <div>
+                  <h4 class="font-semibold mb-2">${os}</h4>
+                  ${editions.map(e => `
+                    <a href="/download.html?version=${ver}&edition=${encodeURIComponent(e)}&os=${os}" class="bg-blue-500 text-white px-4 py-2 rounded mr-2 mb-2 inline-block hover:bg-blue-600">${e}</a>
+                  `).join('')}
+                </div>
+              `).join('')}
+            </div>
+          `;
+
+          section.innerHTML = content;
+          container.appendChild(section);
+        });
+      </script>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
+      <span>&copy; 2025 WinOfficeISO. All rights reserved.</span>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-blue-600">Privacy</a>
+        <a href="#" class="hover:text-blue-600">Terms</a>
+        <a href="#" class="hover:text-blue-600">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
