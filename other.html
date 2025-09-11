@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft Office Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>others-WinOfficeISO</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-
     <!-- Header -->
     <!-- Header -->
     <!-- Header/Navbar -->
@@ -199,7 +198,6 @@
 
         </div>
     </div>
-    <!-- Navbar-End -->
     </div>
 
 
@@ -210,79 +208,244 @@
         lucide.createIcons();
     </script>
 
+    <!-- Main Content -->
     <!-- Hero Section -->
-    <!-- Hero Section -->
-    <section class="bg-gray-100 py-12">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+    <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Everything You Need for Your PC</h1>
+        <p class="text-lg md:text-xl mb-6">This is a simple landing page template you can reuse.</p>
+        <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100">
+            Get Started
+        </a>
+    </section>
 
-            <!-- Left Content -->
-            <div class="flex-1 space-y-6">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
-                    Upgrade from Office 2013 to <span class="text-blue-600">Microsoft 365</span>
-                </h1>
-                <p class="text-lg text-gray-700">
-                    Still using Office 2013? Achieve more with always up-to-date apps and services in Microsoft 365.
-                </p>
-
-                <!-- Download Button in Hero -->
-                <div class="flex gap-4">
-                    <a href="/download.html"
-                        class="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg shadow">
-                        Download
-                    </a>
-                    <a href="#learn-more"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow">
-                        Learn More
-                    </a>
-                </div>
+    <!-- Features Section -->
+    <section id="features" class="py-16 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6 shadow rounded-lg bg-white">
+                <h3 class="text-xl font-semibold mb-2">Fast</h3>
+                <p>Our landing page loads super fast with Tailwind CSS.</p>
             </div>
-
-            <!-- Right Image -->
-            <div class="flex-1">
-                <img src="https://via.placeholder.com/500x300" alt="Person using Microsoft Office"
-                    class="rounded-xl shadow-md" />
+            <div class="p-6 shadow rounded-lg bg-white">
+                <h3 class="text-xl font-semibold mb-2">Responsive</h3>
+                <p>Looks great on mobile, tablet, and desktop devices.</p>
             </div>
-
+            <div class="p-6 shadow rounded-lg bg-white">
+                <h3 class="text-xl font-semibold mb-2">Easy to Use</h3>
+                <p>Clean and reusable structure for any project.</p>
+            </div>
         </div>
     </section>
 
-
-    <!-- Features -->
-    <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10">
-        <div>
-            <img src="https://via.placeholder.com/500x300" alt="Laptop work" class="rounded-lg shadow-md">
-            <h3 class="font-semibold text-xl mt-4">Exclusive, new features every month</h3>
-            <p class="text-gray-600">Get always up-to-date apps like Word, Excel, PowerPoint, Outlook, and OneNote.</p>
-        </div>
-        <div>
-            <img src="https://via.placeholder.com/500x300" alt="Team meeting" class="rounded-lg shadow-md">
-            <h3 class="font-semibold text-xl mt-4">Access from anywhere</h3>
-            <p class="text-gray-600">Collaborate and share with 1 TB of OneDrive storage. Work anytime, anywhere.</p>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100 text-center px-6">
+        <h2 class="text-3xl font-bold mb-6">About Us</h2>
+        <p class="max-w-3xl mx-auto">We build simple and effective landing pages to help others get started with their
+            websites quickly. Our template is customizable and user-friendly.</p>
     </section>
 
-    <!-- FAQ -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
-        <h3 class="text-2xl font-bold mb-6">Top Questions</h3>
-        <details class="border-b py-3">
-            <summary class="cursor-pointer font-medium">What’s the difference between Office 2013 and Microsoft 365?
-            </summary>
-            <p class="text-gray-600 mt-2">Microsoft 365 is subscription-based, always updated, while Office 2013 is
-                outdated.</p>
-        </details>
-        <details class="border-b py-3">
-            <summary class="cursor-pointer font-medium">Is internet access required for Microsoft 365?</summary>
-            <p class="text-gray-600 mt-2">No, once installed you can use apps offline. Internet is needed for updates &
-                cloud storage.</p>
-        </details>
-        <details class="border-b py-3">
-            <summary class="cursor-pointer font-medium">Will I still have control of my documents?</summary>
-            <p class="text-gray-600 mt-2">Yes, you own your files. Microsoft 365 just makes them easier to access across
-                devices.</p>
-        </details>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 text-center px-6">
+        <h2 class="text-3xl font-bold mb-6">Contact</h2>
+        <form class="max-w-lg mx-auto space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+            <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+            <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg" rows="5" required></textarea>
+            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Send</button>
+        </form>
     </section>
 
 
+    <h2 class="text-3xl font-bold mb-6 text-center">Best Web Browsers for Windows</h2>
+    <br>
+
+    <!-- Browsers Grid -->
+    <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/comodo-dragon-logo-Windowstan.webp" alt="Comodo Dragon Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Comodo Dragon</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/firefox-logo-beta-new.webp" alt="Firefox Beta Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Firefox (Beta)</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Opera-Logo-Windowstan.webp" alt="Opera Beta Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Opera (Beta)</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Flock-logo-Windowstan.webp" alt="Flock Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Flock</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Avant-Browser-logo-Windowstan.webp" alt="Avant Browser Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Avant</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Netscape-Navigator-logo-Windowstan.webp" alt="Netscape Navigator Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Netscape Navigator</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/K-Meleon-browser-logo-Windowstan.webp" alt="K-Meleon Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">K-Meleon</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Chrome-Beta-logo-Windowstan.webp" alt="Chrome Beta Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Chrome (Beta)</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Chrome-msi-Logo-Windowstan.webp" alt="Chrome MSI Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Chrome (MSI)</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Tor-Browser-Logo-Windowstan.webp" alt="Tor Browser Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Tor Browser</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Maxthon-Logo-Windowstan.webp" alt="Maxthon Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Maxthon Browser</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/UC-Browser-PC-Logo-Windowstan.webp" alt="UC Browser Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">UC Browser</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Brave-Browser-Logo-Windowstan.webp" alt="Brave Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Brave</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Internet-Explorer-Logo-Windowstan.webp" alt="Internet Explorer Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Internet Explorer</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Vivaldi-Browser-Logo-Windowstan.webp" alt="Vivaldi Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Vivaldi</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Opera-Logo-Windowstan.webp" alt="Opera Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Opera</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Chrome-Logo-Windowstan.webp" alt="Chrome Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Google Chrome</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/Safari-2Bfor-2BWindows.webp" alt="Safari Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Safari</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/browser-image/UC-Browser-PC-Logo-Windowstan.webp" alt="Mozilla Firefox Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Mozilla Firefox</h2>
+        </div>
+
+    </section>
+
+    <br><br>
+
+    <h2 class="text-3xl font-bold mb-6 text-center">Best Antivirus for Windows</h2>
+    <br>
+
+    <!-- Security Grid -->
+    <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Comodo-Internet-Security-logo-Windowstan.webp" alt="Comodo Internet Security Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Comodo Internet Security</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Bitdefender-AV-logo (1).webp" alt="Bitdefender Total Security Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Bitdefender Total Security</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Bitdefender-AV-logo (2).webp" alt="Bitdefender Total Security" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Bitdefender Internet Security</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Bitdefender-AV-logo (3).webp" alt="Bitdefender Antivirus Plus" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Bitdefender Antivirus Plus</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Bitdefender-AV-logo.webp" alt="Bitdefender Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Bitdefender Antivirus Free</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/avast-antivirus-logo (1).webp" alt="Avast Internet Security Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Avast Internet Security</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Microsoft-Security-Essentials-logo-Windowstan.webp" alt="Microsoft Security Essentials Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg text-center">Microsoft Security Essentials</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Avira-Logo-Windowstan.webp" alt="Avira AntiVir Personal Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Avira AntiVir Personal</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Kaspersky-AV-logo-Windowstan.webp" alt="Kaspersky AntiVirus Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Kaspersky AntiVirus</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/avg-logo-windowstan.webp" alt="AVG Ultimate Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">AVG Ultimate</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/avg-logo-windowstan.webp" alt="AVG AntiVirus Pro Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">AVG AntiVirus Pro</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/avg-logo-windowstan.webp" alt="AVG AntiVirus Free Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">AVG AntiVirus Free</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/Malwarebytes-logo-Windowstan.webp" alt="Malwarebytes Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg text-center">Malwarebytes Anti-Malware</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/McAfee-Stinger-Logo-Windowstan.webp" alt="McAfee Labs Stinger Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">McAfee Labs Stinger</h2>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4 rounded-lg flex flex-col items-center">
+            <img src="/image/Antivirus-image/SmadAV-logo-Windowstan.webp" alt="Smadav Logo" class="w-20 mb-2">
+            <h2 class="font-bold text-lg">Smadav</h2>
+        </div>
+
+    </section>
+
+    <br><br>
+    <!-- Footer -->
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-10">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -338,7 +501,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
